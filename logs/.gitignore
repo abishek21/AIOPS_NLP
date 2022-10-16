@@ -1,0 +1,3 @@
+*.log
+## having a separate gitignore files inside logs/ allows the user to see the logs dir structure in the
+## the project structre
