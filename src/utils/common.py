@@ -12,6 +12,8 @@ def read_yaml(path_to_yaml: str) -> dict:
     return content
 
 def create_directories(path_to_directories: list) -> None:
+    if type(path_to_directories)!=list:
+        raise TypeError("path_to_directories must be a list")
     for path in path_to_directories:
         os.makedirs(path, exist_ok=True)
         logging.info(f"created directory at: {path}")

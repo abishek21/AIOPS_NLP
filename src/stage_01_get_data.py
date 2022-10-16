@@ -26,7 +26,7 @@ def main(config_path):
     local_data_dir=config["source_download_dir"]["data_dir"]
     create_directories([local_data_dir])
     data_filename=config["source_download_dir"]["data_file"]
-    #local_data_file_path=os.path.join(local_data_dir,data_filename)
+    local_data_file_path=os.path.join(local_data_dir,data_filename)
     shutil.copy("/home/abishek/Downloads/data.xml",local_data_dir)
     logging.info("download started")
 
