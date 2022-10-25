@@ -7,7 +7,7 @@ import numpy as np
 import joblib
 from sklearn.ensemble import RandomForestClassifier
 
-STAGE = "stage 06 training"
+STAGE = "stage 4 training"
 
 logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'),
