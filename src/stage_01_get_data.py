@@ -6,7 +6,7 @@ import logging
 import random
 import os
 
-from src.utils.common import read_yaml, create_directories
+from src.utils.common import read_yaml, create_directories,download_data
 import urllib.request as req
 
 STAGE = "get data" ## <<< change stage name
@@ -32,6 +32,7 @@ def main(config_path):
 
     ## data was not found at this link, Downloaded from gdrive and placed in data/
     #filename,headers=req.urlretrieve(source_data_url,local_data_file_path)
+    download_data(source_data_url,local_data_file_path)
     logging.info("download completed")
     # logging.info(f"download file is present at: {filename}")
     # logging.info(f"download headers at: {headers}")

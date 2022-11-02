@@ -4,6 +4,14 @@ import logging
 import time
 import pandas as pd
 import json
+import gdown
+
+def download_data(url_link,out_path):
+    url = url_link
+    output = out_path
+    gdown.download(url, output, quiet=False)
+    logging.info("data downloaded successfully")
+
 
 def read_yaml(path_to_yaml: str) -> dict:
     with open(path_to_yaml) as yaml_file:
