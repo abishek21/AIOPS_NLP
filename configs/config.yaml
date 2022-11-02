@@ -12,7 +12,7 @@ artifacts:
   MODEL_NAME: model.pkl
 
 ## data was not found at this link, Downloaded from gdrive and placed in data/
-source_data_url: https://drive.google.com/file/d/13A0RtvZZanHXKZNbz5JKwjjO2FedNQCR
+source_data_url: https://drive.google.com/uc?id=13A0RtvZZanHXKZNbz5JKwjjO2FedNQCR
 
 
 source_download_dir:
