@@ -10,4 +10,4 @@ featurize:
 train:
   seed: 2021
   n_est: 100
-  min_split: 12
+  min_split: 10
